@@ -2,16 +2,12 @@
 
 These builds are for testing only
 
-```Bash 
- mkdir -p ~/yagna/
- cd ~/yagna/ 
- git clone ....
+```Bash
 
- mkdir -p ~/.local/lib/yagna/
- mkdir -p ~/.local/bin
- 
- mv -r ~/.local/lib/yagna
- mv *  
+# This will install all binaries where they belong
+./install.sh
 
- git checkout . 
+# Remove all binaries an/or links on the system.
+#./uninstall.sh
+
  ```
