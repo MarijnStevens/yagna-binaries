@@ -78,5 +78,8 @@ ln -sf $PWD/libya_provider.rlib $installPrefix/bin/libya_provider.rlib && update
 # plugins
 ln -sf $PWD/exe-unit $installPrefix/lib/yagna/plugins/exe-unit && update
 
+# Include this in your ~/.bashrc to make it persistent
+export PATH=$PATH:/home/ms/.local/bin
+
 __stepName="Done" && update
 echo ""
