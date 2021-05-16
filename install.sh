@@ -60,6 +60,12 @@ rm $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 #
 # We can use symlinks for everything else, except for ya-runtime-aarch64-host.
 
+# Permissions
+chmod +x ./golemsp
+chmod +x ./ya-provider
+chmod +x ./yagna
+chmod +x ./gftp
+
 # Binaries
 ln -sf $PWD/golemsp $installPrefix/bin/golemsp && update
 ln -sf $PWD/ya-provider $installPrefix/bin/ya-provider && update
