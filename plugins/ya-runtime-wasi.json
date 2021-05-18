@@ -1,0 +1,10 @@
+[
+	   {
+		        "name": "wasmtime",
+			     "supervisor-path": "exe-unit",
+			          "runtime-path": "ya-runtime-wasi",
+				       "description": "wasmtime wasi runtime",
+				            "version": "0.2.1"
+					       }
+]
+
