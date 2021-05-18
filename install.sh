@@ -43,6 +43,13 @@ function update()
   sleep 0.01 # Not required but I want to see the animation; and so do you!
 }
 
+# Permissions
+chmod +x ./golemsp
+chmod +x ./ya-provider
+chmod +x ./yagna
+chmod +x ./gftp
+chmod +x ./plugins/ya-runtime-wasi
+
 mkdir -p $installPrefix/bin && update
 mkdir -p $installPrefix/lib/yagna && update
 
@@ -60,11 +67,9 @@ rm $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 #
 # We can use symlinks for everything else, except for ya-runtime-aarch64-host.
 
-# Permissions
-chmod +x ./golemsp
-chmod +x ./ya-provider
-chmod +x ./yagna
-chmod +x ./gftp
+# KVM Permissions: 
+# sudo adduser $(whoami) kvm
+# sudo chown $(whoami) /dev/kvm
 
 # Binaries
 ln -sf $PWD/golemsp $installPrefix/bin/golemsp && update
