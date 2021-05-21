@@ -1,6 +1,6 @@
 # yagna-binaries
 
-These builds are for testing only
+These builds are for testing only for aarch64 (running on a raspi4)
 
 ```Bash 
 $ chmod +x ./install.sh
