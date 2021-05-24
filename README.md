@@ -28,3 +28,7 @@ Give the executing user KVM permissions:
 ```sudo chown $(whoami) /dev/kvm```
 
 then ```./golemsp run``` to setup your node
+
+# DIY 
+
+You can find the repositories [yagna](https://github.com/MarijnStevens/yagna), [ya-runtime-vm](https://github.com/MarijnStevens/ya-runtime-vm), [ya-runtime-wasi](https://github.com/MarijnStevens/ya-runtime-wasi). They all have build.sh scripts, but you need to have rust support, cross compatible dependencies for aarch64 and docker to build vmrt-x86_64
