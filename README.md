@@ -21,7 +21,8 @@ $ chmod +x ./uninstall.sh
 
 $ ./install.sh 
 ```
-# KVM Permissions: 
+Give the executing user KVM permissions:
+
 ```sudo adduser $(whoami) kvm```
 
 ```sudo chown $(whoami) /dev/kvm```
