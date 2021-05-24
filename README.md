@@ -21,4 +21,8 @@ $ chmod +x ./uninstall.sh
 
 $ ./install.sh 
 ```
+# KVM Permissions: 
+```sudo adduser $(whoami) kvm```
+```sudo chown $(whoami) /dev/kvm```
+
 then ```./golemsp run``` to setup your node
