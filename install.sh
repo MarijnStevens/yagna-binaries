@@ -90,3 +90,12 @@ export PATH=$PATH:/home/ms/.local/bin
 
 __stepName="Done" && update
 echo ""
+
+echo ""
+echo "Make sure you have libpixman-1-dev installed. If not: "
+echo "# sudo apt-get install libpixman-1-dev"
+echo ""
+echo "The current user: $(whoami) requires to be able to access the KVM."
+echo "# sudo adduser $(whoami) kvm"
+echo "# sudo chown $(whoami) /dev/kvm"
+echo ""
