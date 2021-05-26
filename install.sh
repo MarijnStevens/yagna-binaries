@@ -43,6 +43,14 @@ function update()
   sleep 0.01 # Not required but I want to see the animation; and so do you!
 }
 
+# Permissions
+chmod +x ./golemsp
+chmod +x ./ya-provider
+chmod +x ./yagna
+chmod +x ./gftp
+chmod +x ./plugins/ya-runtime-wasi
+chmod +x ./plugins/ya-runtime-vm-aarch64-host/ya-runtime-vm-aarch64-host
+
 mkdir -p $installPrefix/bin && update
 mkdir -p $installPrefix/lib/yagna && update
 
@@ -60,11 +68,9 @@ rm $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 #
 # We can use symlinks for everything else, except for ya-runtime-aarch64-host.
 
-# Permissions
-chmod +x ./golemsp
-chmod +x ./ya-provider
-chmod +x ./yagna
-chmod +x ./gftp
+# KVM Permissions: 
+# sudo adduser $(whoami) kvm
+# sudo chown $(whoami) /dev/kvm
 
 # Binaries
 ln -sf $PWD/golemsp $installPrefix/bin/golemsp && update
@@ -77,6 +83,7 @@ ln -sf $PWD/libya_provider.rlib $installPrefix/bin/libya_provider.rlib && update
 
 # plugins
 ln -sf $PWD/exe-unit $installPrefix/lib/yagna/plugins/exe-unit && update
+ln -sf $PWD/plugins/ya-runtime-wasi $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 
 # Include this in your ~/.bashrc to make it persistent
 export PATH=$PATH:/home/ms/.local/bin
