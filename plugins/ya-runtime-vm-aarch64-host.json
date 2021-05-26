@@ -1,5 +1,5 @@
 [ 
-  { "name": "vm-aarch64-host",
+  { "name": "vm",
     "version": "0.0.1",
     "supervisor-path": "exe-unit",
     "runtime-path": "ya-runtime-vm-aarch64-host/ya-runtime-vm-aarch64-host",
