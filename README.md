@@ -15,7 +15,6 @@ This build is for 64 bit arm architecture, also known as aarch64. This has been 
 4. Go into the yagna-binaries folder and run the following 
 ```Bash 
 $ chmod +x ./install.sh
-$ chmod +x ./uninstall.sh
 $ ./install.sh 
 ```
 6. Lastly, give the executing user KVM permissions:
@@ -24,6 +23,9 @@ $ ./install.sh
 
 7. Then run ```./golemsp run``` like normal to setup your node
 
-# Compile from Sources 
+## Uninstall yagna-binaries
+Remove it with ```$ chmod +x ./uninstall.sh```
+
+## Compile from Sources 
 
 You can find the repositories [yagna](https://github.com/MarijnStevens/yagna), [ya-runtime-vm](https://github.com/MarijnStevens/ya-runtime-vm), [ya-runtime-wasi](https://github.com/MarijnStevens/ya-runtime-wasi). They all have build.sh scripts, but you need to have rust support, cross compatible dependencies for aarch64 and docker to build vmrt-x86_64
