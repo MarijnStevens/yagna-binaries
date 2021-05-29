@@ -9,4 +9,4 @@ This outlines the Proof of Concept for Golem on arm, a 0xHackathon Project led b
 5. Task was negotiated and sent to `Pineapple`, which responded with the correct result of `decentralizationist` paying Pineapple a small fee for its work
 
 
-<img src='images/Pineapple.png'>
+<img src='images/Pineapple.PNG'>
