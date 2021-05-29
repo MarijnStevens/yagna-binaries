@@ -8,6 +8,5 @@ This outlines the Proof of Concept for Golem on arm, a 0xHackathon Project led b
 4. The x86_64 Requestor, which was called "PalmTree" executed the hashcracker on the subnet via `python3 requestor.py --subnet aarch64-network`
 5. Task was negotiated and sent to `Pineapple`, which responded with the correct result of `decentralizationist` paying Pineapple a small fee for its work
 
-The usage is shown here below for Pineapple -
-(Pineapple.png "a title")
 
+![](Pineapple.png "Usage as shown on golemstats.com")
