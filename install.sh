@@ -86,7 +86,7 @@ ln -sf $PWD/exe-unit $installPrefix/lib/yagna/plugins/exe-unit && update
 ln -sf $PWD/plugins/ya-runtime-wasi $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 
 # Include this in your ~/.bashrc to make it persistent
-export PATH=$PATH:/home/ms/.local/bin
+export PATH=$PATH:/home/$USER/.local/bin
 
 __stepName="Done" && update
 echo ""
