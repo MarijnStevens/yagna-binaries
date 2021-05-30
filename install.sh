@@ -50,7 +50,7 @@ chmod +x ./yagna
 chmod +x ./gftp
 chmod +x ./plugins/ya-runtime-wasi
 chmod +x ./plugins/ya-runtime-vm-aarch64-host/ya-runtime-vm-aarch64-host
-chmod +x ./plugins/ya-runtime-vm-aarch64-host/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
+chmod +x ./plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
 
 mkdir -p $installPrefix/bin && update
 mkdir -p $installPrefix/lib/yagna && update
