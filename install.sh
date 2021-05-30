@@ -89,6 +89,7 @@ ln -sf $PWD/plugins/ya-runtime-wasi $installPrefix/lib/yagna/plugins/ya-runtime-
 chmod +x $installPrefix/lib/yagna/plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
 
 # Include this in your ~/.bashrc to make it persistent
+Environment=PATH=/home/$USER/.local/bin/
 export PATH=$PATH:/home/ms/.local/bin
 
 __stepName="Done" && update
