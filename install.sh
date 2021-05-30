@@ -50,7 +50,6 @@ chmod +x ./yagna
 chmod +x ./gftp
 chmod +x ./plugins/ya-runtime-wasi
 chmod +x ./plugins/ya-runtime-vm-aarch64-host/ya-runtime-vm-aarch64-host
-chmod +x ./plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
 
 mkdir -p $installPrefix/bin && update
 mkdir -p $installPrefix/lib/yagna && update
@@ -85,6 +84,9 @@ ln -sf $PWD/libya_provider.rlib $installPrefix/bin/libya_provider.rlib && update
 # plugins
 ln -sf $PWD/exe-unit $installPrefix/lib/yagna/plugins/exe-unit && update
 ln -sf $PWD/plugins/ya-runtime-wasi $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
+
+# Permission
+chmod +x $installPrefix/lib/yagna/plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
 
 # Include this in your ~/.bashrc to make it persistent
 export PATH=$PATH:/home/ms/.local/bin
