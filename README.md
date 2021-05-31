@@ -1,6 +1,6 @@
 # Yagna-binaries for aarch64
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dX8eNFw-WZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Youtube Demo](https://img.youtube.com/vi/dX8eNFw-WZ0/0.jpg)](https://www.youtube.com/watch?v=dX8eNFw-WZ0)
 
 Hackathon entry for both @MarijnStevens and @ControlCplusControlV as an entry for the Golem Network Bounty in the 0xHackathon May 2021.
 
