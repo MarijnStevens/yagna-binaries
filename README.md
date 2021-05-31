@@ -23,7 +23,7 @@ $ ./install.sh
 
 7. Then run ```./golemsp run``` like normal to setup your node
 
-8. Disconnect and restart with ```nohup golemsp run > yagna.log &``` to keep the process running when you disconnect the terminal. 
+8. Once configured, restart with ```nohup golemsp run > yagna.log &``` to keep the process running when you disconnect the terminal. 
 
 ## Uninstall yagna-binaries
 Remove it with ```$ chmod +x ./uninstall.sh```
