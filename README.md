@@ -4,7 +4,7 @@ Hackathon entry for both @MarijnStevens and @ControlCplusControlV as an entry fo
 
 This build is for 64 bit arm architecture, also known as aarch64. This has been tested on both the Raspberry Pi 3 and 4. The Goal of this project was to provide a build of Golem for 64 bit arm as it becomes increasingly more common, especially after adoption from big companies like Apple and Nvidia.
 
-**Testing guide - in 7 steps**
+**Setup guide**
 1. Install base image from [here](https://ubuntu.com/download/raspberry-pi), make sure its version 21.04 64-Bit, this is needed as the LTS version lacks newer libraries needed to run the runtime.
 
 2. Then install a needed dependency via 
