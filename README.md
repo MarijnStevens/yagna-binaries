@@ -9,23 +9,23 @@ This build is for 64 bit arm architecture, also known as aarch64. This has been 
 **Setup guide**
 1. Install base image from [here](https://ubuntu.com/download/raspberry-pi), make sure its version 21.04 64-Bit, this is needed as the LTS version lacks newer libraries needed to run the runtime.
 
-2. Then install a needed dependency via 
- ```sudo apt-get install libpixman-1-dev```
-3. Then clone this repo via
+2. Run ```sudo apt update && sudo apt upgrade```to get your packages up to date
+3. Then install a needed dependency via 
+ ```sudo apt-get install libpixman-1-0```
+4. Then clone this repo via
 ```git clone https://github.com/MarijnStevens/yagna-binaries.git```
-3. Run both ```sudo apt update``` then ```sudo apt upgrade```to get your packages up to date
-4. Go into the yagna-binaries folder and run the following 
+5. Go into the yagna-binaries folder and run the following 
 ```Bash 
 $ chmod +x ./install.sh
 $ ./install.sh 
 ```
 6. Lastly, give the executing user KVM permissions:
 ```sudo adduser $(whoami) kvm```
-```sudo chown $(whoami) /dev/kvm```
+7. Reboot / Relogin
 
-7. Then run ```./golemsp run``` like normal to setup your node
+8. Then run ```./golemsp run``` like normal to setup your node
 
-8. Once configured, restart with ```nohup golemsp run > yagna.log &``` to keep the process running when you disconnect the terminal. 
+9. Once configured, restart with ```nohup golemsp run > yagna.log &``` to keep the process running when you disconnect the terminal. 
 
 ## Uninstall yagna-binaries
 Remove it with ```$ chmod +x ./uninstall.sh```
