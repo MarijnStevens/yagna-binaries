@@ -70,7 +70,6 @@ rm $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 
 # KVM Permissions: 
 # sudo adduser $(whoami) kvm
-# sudo chown $(whoami) /dev/kvm
 
 # Binaries
 ln -sf $PWD/golemsp $installPrefix/bin/golemsp && update
@@ -86,7 +85,7 @@ ln -sf $PWD/exe-unit $installPrefix/lib/yagna/plugins/exe-unit && update
 ln -sf $PWD/plugins/ya-runtime-wasi $installPrefix/lib/yagna/plugins/ya-runtime-wasi && update
 
 # Permission
-chmod +x $installPrefix/lib/yagna/plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-x86_64
+chmod +x $installPrefix/lib/yagna/plugins/ya-runtime-vm-aarch64-host/runtime/vmrt-*
 
 # Include this in your ~/.bashrc to make it persistent
 export PATH=$PATH:/home/$USER/.local/bin
@@ -95,10 +94,10 @@ __stepName="Done" && update
 echo ""
 
 echo ""
-echo "Make sure you have libpixman-1-dev installed. If not: "
-echo "$ sudo apt-get install libpixman-1-dev"
+echo "Make sure you have libpixman-1-0 installed. If not: "
+echo "$ sudo apt-get install libpixman-1-0"
 echo ""
 echo "The current user: $(whoami) requires to be able to access the KVM."
 echo "$ sudo adduser $(whoami) kvm"
-echo "$ sudo chown $(whoami) /dev/kvm"
+echo "And re-login."
 echo ""
