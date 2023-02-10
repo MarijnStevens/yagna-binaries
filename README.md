@@ -1,3 +1,8 @@
+### Warning this project is dead.
+
+Because this code was never merged, this project and all attempts to include all of Qumu ability, is pretty much dead. I proved the concept, but if the Golem Group doesnt embrase it, 
+I cannot support it anymore. Anyone is free to find and detect what is possible in the Golem network, but I cant promise compatability. My whole trend was to tell the Golem group to embrase multi-arch, and I think I failed. 
+
 # Yagna-binaries for aarch64
 
 [![Youtube Demo](https://img.youtube.com/vi/dX8eNFw-WZ0/0.jpg)](https://www.youtube.com/watch?v=dX8eNFw-WZ0)
